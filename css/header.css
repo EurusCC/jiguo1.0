@@ -1,0 +1,118 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除ul/li默认小黑点 */
+ul li {
+    list-style: none;
+}
+
+/* 去除a链接下划线、默认颜色 */
+a {
+    text-decoration: none;
+    color: rgb(76, 74, 74);
+}
+
+.continer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    padding-left: 10px;
+}
+
+header {
+    height: 76px;
+    overflow: hidden;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+}
+
+.logo {
+    width: 132px;
+    float: left;
+    margin-top: 10px;
+}
+
+.logo:hover {
+    animation: opc 2s infinite;
+}
+
+@keyframes opc {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav {
+    float: left;
+    width: 490px;
+    height: 60px;
+    padding: 28px 0 0 40px;
+    overflow: hidden;
+}
+
+.nav>li {
+    float: left;
+    padding: 0 25px;
+
+}
+
+.nav>li>a {
+    font-size: 20px;
+}
+
+.nav>li>a:hover {
+    color: #fe5341;
+}
+
+.regist,
+.search {
+    float: right;
+}
+
+.regist {
+    transition: all 0.15s linear;
+    margin-top: 23px;
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px #fe5341 solid;
+    color: #fe5341;
+}
+
+.regist:hover {
+    background-color: #fe5341;
+    color: white;
+}
+
+.search {
+    transition: transform 0.08s ease;
+    width: 42px;
+    height: 40px;
+    line-height: 999;
+    overflow: hidden;
+    margin-top: 28px;
+    margin-right: 15px;
+    background: url(../image/search.png) no-repeat;
+}
+
+.search:hover {
+    transform: scale(1.2);
+}
