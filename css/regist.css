@@ -6,8 +6,9 @@
 
 /* input 去边框 */
 input {
-    /* // outline-color: #5B9CF8;   // 边框改色 */
-    outline: none;
+    /* 边框改色 */
+    /* outline-color: #e2dfdf;
+    outline: none; */
     padding-left: 10px;
 }
 
@@ -38,4 +39,63 @@ body {
     font-size: 20px;
     padding-left: 25px;
     margin-top: 20px;
+}
+
+form {
+    width: 400px;
+    margin: 50px auto 150px;
+}
+
+.content p {
+    margin-top: 27px;
+}
+
+.content input {
+    background: #f7f7f7;
+    color: #a3a3a3;
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px #eee solid;
+    border-radius: 10px;
+}
+
+.content p:nth-of-type(2) input,
+.content p:nth-of-type(3) input {
+    width: 245px;
+    text-align: left;
+
+}
+
+.content p:nth-of-type(2) img {
+    margin-left: 16px;
+}
+
+#gain {
+    display: inline-block;
+    width: 132px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #a3a3a3 solid;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 16px;
+    color: rgb(151, 151, 151);
+    cursor: pointer;
+}
+
+#submit {
+    background: #fe5341;
+    color: #fff;
+    border: medium none;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
 }
