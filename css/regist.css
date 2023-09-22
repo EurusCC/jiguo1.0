@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* input 去边框 */
+input {
+    /* 边框改色 */
+    /* outline-color: #e2dfdf;
+    outline: none; */
+    padding-left: 10px;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+.box {
+
+    background-color: white;
+    /* margin-top: 30px; */
+    padding: 25px 0 35px 0;
+
+}
+
+.content {
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px #d7d7d7 solid;
+}
+
+.box>.content>h2 {
+    border-left: 5px solid rgb(244, 51, 51);
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+form {
+    width: 400px;
+    margin: 50px auto 150px;
+}
+
+.content p {
+    margin-top: 27px;
+}
+
+.content input {
+    background: #f7f7f7;
+    color: #a3a3a3;
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px #eee solid;
+    border-radius: 10px;
+}
+
+.content p:nth-of-type(2) input,
+.content p:nth-of-type(3) input {
+    width: 245px;
+    text-align: left;
+
+}
+
+.content p:nth-of-type(2) img {
+    margin-left: 16px;
+}
+
+#gain {
+    display: inline-block;
+    width: 132px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #a3a3a3 solid;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 16px;
+    color: rgb(151, 151, 151);
+    cursor: pointer;
+}
+
+#submit {
+    background: #fe5341;
+    color: #fff;
+    border: medium none;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
