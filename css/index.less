@@ -9,4 +9,342 @@
     height: 300px;
     overflow: hidden;
     background: url(../image/original.jpg) no-repeat center top;
+    padding-top: 35px;
+
+    .focus-info {
+        h2 {
+            font-size: 34px;
+            color: white;
+            text-align: right;
+            font-weight: 500;
+        }
+
+        .labe {
+            float: right;
+            color: white;
+            margin-top: 35px;
+
+            span {
+                background: rgba(255, 255, 255, .3);
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 16px;
+                margin-right: 10px;
+
+            }
+
+            span:nth-of-type(1) {
+                margin-left: 44px;
+            }
+
+            p {
+                padding: 20px 0 16px 0;
+                font-size: 18px;
+            }
+
+            .btn {
+                a {
+                    background: #fe5341;
+                    color: #fff;
+                    width: 242px;
+                    height: 48px;
+                    text-align: center;
+                    display: inline-block;
+                    line-height: 48px;
+                    font-size: 24px;
+                    border-radius: 3px;
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+// 热门试用
+
+.hot-box {
+    position: relative;
+
+    .title {
+        position: relative;
+        padding: 18px 0 16px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #474747;
+        line-height: 1.6;
+        margin-left: 100px;
+    }
+
+    .swiper {
+        height: 400px;
+        // width: 1000px;
+        margin-left: 100px;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                ul {
+                    li {
+                        width: 220px;
+                        height: 289px;
+                        float: left;
+                        border: 1px solid #e6e9e9;
+                        border-radius: 5px;
+                        margin-right: 37px;
+                        position: relative;
+                        overflow: hidden;
+                        text-align: center;
+
+                        img {
+                            height: 130px;
+                            width: 220px;
+                        }
+
+                        .top-tip {
+                            color: #f5e8e8;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            line-height: 22px;
+                            border-radius: 0 0 0 6px;
+                            padding: 0 8px;
+                            font-size: 12px;
+                        }
+
+                        .shoufa {
+                            background-color: #fe5341;
+                        }
+
+                        .tys {
+                            background-color: #fbf4cb;
+                            color: #c4a96a;
+                        }
+
+                        .hot-con {
+                            padding: 15px;
+
+                            .name {
+                                font-size: 16px;
+                                height: 48px;
+                                text-align: center;
+                            }
+
+                            .red {
+                                color: #fe5341;
+
+                                span {
+                                    border: 1px solid #fe5341;
+                                }
+                            }
+
+                            .green {
+                                color: #80c269;
+
+                                span {
+                                    border: 1px solid #80c269;
+                                }
+                            }
+
+                            .tabs {
+                                padding: 6px 0;
+                                font-size: 12px;
+                                text-align: center;
+
+                                span {
+                                    display: inline-block;
+                                    padding: 2px 10px;
+                                    margin: 0 5px;
+                                    border-radius: 5px;
+
+                                }
+                            }
+
+                            .sq {
+                                font: 16px;
+                                line-height: 25px;
+
+                                span {
+                                    color: #fe5341;
+                                }
+                            }
+
+                            .current {
+                                font-size: 14px;
+                                line-height: 25px;
+                            }
+
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .swiper-button-prev {
+        position: absolute !important;
+        top: 200px !important;
+        left: 46px !important;
+        color: #a3a0a0 !important;
+        z-index: 26 !important;
+
+    }
+
+    .swiper-button-next {
+        position: absolute !important;
+        top: 200px !important;
+        right: 46px !important;
+        color: #a3a0a0 !important;
+    }
+}
+
+
+// 报告精选
+
+.report-box {
+    background-color: #f7f7f7;
+
+
+}
+
+.com {
+    .title {
+        position: relative;
+        padding: 18px 0 16px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #474747;
+        line-height: 1.6;
+        margin-left: 100px;
+
+    }
+
+    a.more {
+        font-weight: normal;
+        position: absolute;
+        right: 0;
+        top: 22px;
+        padding-right: 17px;
+        margin-right: 100px;
+        font-size: 14px;
+        color: #fd6959;
+        background: url(../image/readMore.png) no-repeat right 7px;
+    }
+
+    ul {
+        padding-bottom: 20px;
+        overflow: hidden;
+        margin-left: 100px;
+
+        li {
+            width: 220px;
+            height: 231px;
+            line-height: 21px;
+            margin: 0 37px 20px 0;
+            float: left;
+            border: 1px solid #e6e9e9;
+            border-radius: 6px;
+            background-color: #fff;
+
+            a {
+                img {
+                    width: 220px;
+                    height: 130px;
+
+                    border-radius: 6px 6px 0 0;
+
+                    &:hover {
+                        animation: opc 2s infinite;
+                    }
+                }
+
+                .info {
+                    padding: 7px 10px 10px;
+
+                    .name {
+                        font-size: 14px;
+                        height: 45px;
+                        overflow: hidden;
+                        word-break: break-all;
+                    }
+
+                    .tip {
+                        color: #a3a3a3;
+                        font-size: 12px;
+
+                        .icon {
+                            span {
+                                display: inline-block;
+                                vertical-align: middle;
+                                padding-left: 14px;
+                                margin-left: 3px
+                            }
+
+                            .zan {
+                                background: url(../image/zan.png) no-repeat left 4px;
+                            }
+
+                            .look {
+                                background: url(../image/reply.png) no-repeat left center;
+                            }
+                        }
+                    }
+
+                    .fix {
+                        padding: 13px 0;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+@keyframes opc {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// 导购精选
+
+.guide {
+    ul {
+
+        li {
+            position: relative;
+
+            .bom {
+                width: 221px;
+                height: 19px;
+                position: absolute;
+                bottom: -14px;
+            }
+        }
+    }
+
+
+
 }
