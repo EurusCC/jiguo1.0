@@ -19,8 +19,6 @@ function gain_() {
             gain.disabled = true
         }
 
-
-
     }, 1000)
     num = parseInt(Math.random() * 10000)
     alert(num)

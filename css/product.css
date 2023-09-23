@@ -1,0 +1,156 @@
+/* 去默认边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ul 去默认样式 */
+ul {
+    list-style: none;
+}
+
+/* a链接 去下划线 改字体颜色 */
+a {
+    /* cursor: pointer;
+  悬浮小手
+   */
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.top {
+    background-color: #F0F0F0;
+    height: 102px;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+
+.top>.content>.left {
+    float: left;
+    font-size: 20px;
+    width: 60px;
+    padding-left: 11px;
+    border-left: 6px #fe5341 solid;
+    margin-right: 70px;
+}
+
+.top>.content>.right>ul {
+    display: flex;
+    justify-content: space-between
+}
+
+.top>.content>.right p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #858585;
+}
+
+.top>.content>.right img {
+    margin-left: 5px;
+    text-align: center;
+}
+
+.top>.content>.right>ul>li:first-child p {
+    border-bottom: 2px solid red;
+}
+
+/* 产品介绍 */
+.product {
+    /* width: 1000px;
+    margin: 0 auto; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product>.left {
+    width: 700px;
+}
+
+.product h3 {
+    border-left: 6px solid #fe5341;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 20px;
+    color: #656565;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+/* .product>.left>.div1>p {
+    line-height: 30px;
+} */
+
+.product>.left>div p {
+    line-height: 26px;
+}
+
+.product>.left>div>img {
+    margin: 30px 0;
+}
+
+.product>.left>div>.red {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product>.left>div>.blue {
+    color: rgb(39, 95, 193);
+    font-weight: bold;
+}
+
+.product>.left>div>.blue1 {
+    color: #3397c6;
+}
+
+.product>.right {
+    width: 270px;
+}
+
+
+.product>.right>.top1>p:nth-of-type(1) {
+    color: red;
+    font-size: 40px;
+    padding: 15px 0;
+}
+
+.product>.right>.top1>a {
+    display: block;
+    height: 48px;
+    border-radius: 5px;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.product>.right>.top1>p:nth-of-type(2) {
+    color: rgb(161, 161, 161);
+    text-align: center;
+    font-size: 14px;
+}
+
+.product>.right>.content1>p {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(161, 161, 161);
+}
+
+.product>.right>.content1>h4 {
+    margin: 8px 0;
+}
+
+.product>.right>.bottom1 {
+    margin-top: 50px;
+}
