@@ -53,4 +53,23 @@ var a_ = document.querySelector('.a')
 a_.onclick = function () {
     a_.style.backgroundImage = 'url(../../image/loading-icon.gif)';
     a_.innerHTML = '正在加载中'
+
+    // setTimeout(function () {
+    //     a_.style.display = 'none'
+    //     var list1 = document.querySelector('.list1')
+    //     list1.style.height = '1280px'
+    // }, 1500)
+
+    // setTimeout(function () {
+    //     a_.style.display = 'inline-block'
+    //     a_.addEventListener('click', function (event) {
+    //         event.preventDefault();
+    //         setTimeout(function () {
+    //             a_.style.display = 'none'
+    //             var list1 = document.querySelector('.list1')
+    //             list1.style.height = '1280px'
+    //         }, 2100)
+    //     })
+
+    // }, 2000)
 }
