@@ -5,7 +5,7 @@ var timer;
 var num = 0
 function gain_() {
 
-    var i = 61;
+    var i = 60;
 
     clearInterval(timer);
     timer = setInterval(function () {
@@ -21,9 +21,12 @@ function gain_() {
 
     }, 1000)
     num = parseInt(Math.random() * 10000)
-    alert(num)
-    console.log(num);
+    setTimeout(function () {
+        alert(num)
+        console.log(num);
+    }, 6000)
 }
+
 
 var input = document.querySelectorAll('input')
 
