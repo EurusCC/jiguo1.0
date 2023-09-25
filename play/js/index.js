@@ -35,7 +35,7 @@ function show ( data2 )
         {
             str2 += `
         <li>
-                        <a href="./guid/detail.html">
+                        <a href="../product.html">
                             <img src="${ b.img }" alt="">
                             <div class="info">
                                 <p class="name">${ b.text }
