@@ -1,12 +1,13 @@
 //获取元素
-var gain_ = document.querySelector('#gain')
+// var gain_ = document.querySelector('#gain')
 var submit = document.querySelector('#submit')
 
 var timer;
 
 var num = 0
-gain_.onclick = function () {
 
+// gain_.onclick = function () {
+function gain_() {
     var i = 60;
 
     clearInterval(timer);
