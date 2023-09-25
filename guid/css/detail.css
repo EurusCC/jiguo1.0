@@ -127,41 +127,45 @@ a {
     float: right;
 }
 
-.com ul li a .info {
+.com ul li .info {
     padding: 7px 10px 10px;
 }
 
-.com ul li a .info .name {
+.com ul li .info .name {
     font-size: 14px;
     height: 45px;
     overflow: hidden;
     word-break: break-all;
 }
 
-.com ul li a .info .tip {
+.com ul li .info .tip {
     color: #a3a3a3;
     font-size: 12px;
 }
 
-.com ul li a .info .tip .icon span {
+.com ul li .info .tip .icon span {
     display: inline-block;
     vertical-align: middle;
     padding-left: 14px;
     margin-left: 3px;
 }
 
-.com ul li a .info .tip .icon .zan {
+.com ul li .info .tip .icon .zan {
     background: url(../../image/zan.png) no-repeat left 4px;
 
 }
 
-.com ul li a .info .tip .icon .look {
+.zan:hover {
+    cursor: pointer;
+}
+
+.com ul li .info .tip .icon .look {
     background: url(../../image/reply.png) no-repeat left center;
 }
 
 
 
-.com ul li a .info .fix {
+.com ul li .info .fix {
     padding: 13px 0;
 }
 

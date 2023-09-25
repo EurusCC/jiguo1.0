@@ -86,7 +86,7 @@ submit.onclick = function () {
 
     alert('注册成功！')
     var form_ = document.querySelector('form')
-    form_.setAttribute("action", '../login.html');
+    form_.setAttribute("action", './login.html');
 }
 
 
