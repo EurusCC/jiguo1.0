@@ -1,26 +1,23 @@
 //获取元素
 var gain_ = document.querySelector('#gain')
 var submit = document.querySelector('#submit')
-
-var timer;
-
 var num = 0
-
 gain_.onclick = function () {
-    // function gain_() {
     var i = 60;
+    var timer;
 
     clearInterval(timer);
     timer = setInterval(function () {
         i--;
-        gain.innerHTML = i + '秒后重新发送';
+        gain_.innerHTML = i + '秒后重新发送';
         if (i == 0) {
-            clearInterval(timer);
-            gain.innerHTML = '重新获取验证码';
-            gain.disabled = false
+            // clearInterval(timer);
+            gain_.innerHTML = '重新获取验证码';
+            gain_.disabled = false
         } else {
-            gain.disabled = true
+            gain_.disabled = true
         }
+
 
     }, 1000)
     num = parseInt(Math.random() * 10000)
