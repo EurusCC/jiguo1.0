@@ -120,20 +120,19 @@ header {
 }
 
 .search {
-    transition: transform 0.08s ease;
+    transition: transform 0.3s ease;
     width: 42px;
     height: 40px;
     line-height: 999;
     overflow: hidden;
     margin-top: 28px;
     margin-right: 15px;
-    background: url(../image/search.png) no-repeat;
+    background: url(../../image/search.png) no-repeat;
 }
 
 .search:hover {
     transform: scale(1.2);
 }
-
 
 /* 导购清单 */
 .content {
@@ -159,7 +158,6 @@ header {
     font-size: 18px;
     padding-bottom: 8px;
     color: #a3a3a3;
-
 }
 
 .content>.new>a:nth-of-type(1) {
@@ -167,24 +165,22 @@ header {
     border-bottom: 4px red solid;
 }
 
-/* .content>.box {} */
-
 .continer {
     width: 1000px;
     height: auto;
     margin: 0 auto;
 }
 
-.com .title {
+/* .com .title {
     position: relative;
     padding: 18px 0 16px;
     font-size: 20px;
     font-weight: bold;
     color: #474747;
     line-height: 1.6;
-}
+} */
 
-.com a.more {
+/* .com a.more {
     font-weight: normal;
     position: absolute;
     right: 0;
@@ -193,27 +189,40 @@ header {
     font-size: 14px;
     color: #fd6959;
     background: url(../image/readMore.png) no-repeat right 7px;
-}
+} */
 
 .com ul {
     height: 1100px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+.list1::after {
+    content: '';
+    width: 220px;
+    height: 200;
 }
 
 .com ul li {
     width: 220px;
     height: 231px;
     line-height: 21px;
-    /* margin: 0 37px 20px 0; */
-    float: left;
+    /* float: left; */
     border: 1px solid #e6e9e9;
     border-radius: 6px;
     background-color: #fff;
 
+}
+
+.com ul li::after {
+    content: '';
+    width: 220px;
+    height: 200px;
 }
 
 .com ul li:nth-of-type(4) {
