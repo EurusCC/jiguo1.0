@@ -46,7 +46,7 @@ function show(data_) {
     }
     list1.innerHTML = str;
 }
-ajax_('get', 'http://127.0.0.1:3000/guid/new')
+ajax_('get', 'http://127.0.0.1:3000/guid/hot')
 
 
 var a_ = document.querySelector('.a')
