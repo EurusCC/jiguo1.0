@@ -1,27 +1,23 @@
 .continer {
   margin: 0 auto;
 }
-
 .focus {
   height: 300px;
   overflow: hidden;
   background: url(../image/original.jpg) no-repeat center top;
   padding-top: 35px;
 }
-
 .focus .focus-info h2 {
   font-size: 34px;
   color: white;
   text-align: right;
   font-weight: 500;
 }
-
 .focus .focus-info .labe {
   float: right;
   color: white;
   margin-top: 35px;
 }
-
 .focus .focus-info .labe span {
   background: rgba(255, 255, 255, 0.3);
   display: inline-block;
@@ -30,16 +26,13 @@
   font-size: 16px;
   margin-right: 10px;
 }
-
 .focus .focus-info .labe span:nth-of-type(1) {
   margin-left: 44px;
 }
-
 .focus .focus-info .labe p {
   padding: 20px 0 16px 0;
   font-size: 18px;
 }
-
 .focus .focus-info .labe .btn a {
   background: #fe5341;
   color: #fff;
@@ -52,11 +45,9 @@
   border-radius: 3px;
   margin-left: 40px;
 }
-
 .hot-box {
   position: relative;
 }
-
 .hot-box .title {
   position: relative;
   padding: 18px 0 16px;
@@ -65,11 +56,9 @@
   color: #474747;
   line-height: 1.6;
 }
-
 .hot-box .swiper {
   height: 400px;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li {
   width: 220px;
   height: 289px;
@@ -81,12 +70,10 @@
   overflow: hidden;
   text-align: center;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li img {
   height: 130px;
   width: 220px;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .top-tip {
   color: #f5e8e8;
   position: absolute;
@@ -97,69 +84,55 @@
   padding: 0 8px;
   font-size: 12px;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .shoufa {
   background-color: #fe5341;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .tys {
   background-color: #fbf4cb;
   color: #c4a96a;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con {
   padding: 15px;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .name {
   font-size: 16px;
   height: 48px;
   text-align: center;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .red {
   color: #fe5341;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .red span {
   border: 1px solid #fe5341;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .green {
   color: #80c269;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .green span {
   border: 1px solid #80c269;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .tabs {
   padding: 6px 0;
   font-size: 12px;
   text-align: center;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .tabs span {
   display: inline-block;
   padding: 2px 10px;
   margin: 0 5px;
   border-radius: 5px;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .sq {
   font: 16px;
   line-height: 25px;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .sq span {
   color: #fe5341;
 }
-
 .hot-box .swiper .swiper-wrapper .swiper-slide ul li .hot-con .current {
   font-size: 14px;
   line-height: 25px;
 }
-
 .hot-box .swiper-button-prev {
   position: absolute !important;
   top: 200px !important;
@@ -167,18 +140,15 @@
   color: #a3a0a0 !important;
   z-index: 26 !important;
 }
-
 .hot-box .swiper-button-next {
   position: absolute !important;
   top: 200px !important;
-  right: -56px !important;
+  right: -20px !important;
   color: #a3a0a0 !important;
 }
-
 .report-box {
   background-color: #f7f7f7;
 }
-
 .com .title {
   position: relative;
   padding: 18px 0 16px;
@@ -187,7 +157,6 @@
   color: #474747;
   line-height: 1.6;
 }
-
 .com a.more {
   font-weight: normal;
   position: absolute;
@@ -199,12 +168,10 @@
   color: #fd6959;
   background: url(../image/readMore.png) no-repeat right 7px;
 }
-
 .com ul {
   padding-bottom: 20px;
   overflow: hidden;
 }
-
 .com ul li {
   width: 220px;
   height: 231px;
@@ -215,126 +182,101 @@
   border-radius: 6px;
   background-color: #fff;
 }
-
 .com ul li a img {
   width: 220px;
   height: 130px;
   border-radius: 6px 6px 0 0;
 }
-
 .com ul li a img:hover {
   animation: opc 2s infinite;
 }
-
 .com ul li .info {
   padding: 7px 10px 10px;
 }
-
 .com ul li .info .name {
   font-size: 14px;
   height: 45px;
   overflow: hidden;
   word-break: break-all;
 }
-
 .com ul li .info .tip {
   color: #a3a3a3;
   font-size: 12px;
 }
-
 .com ul li .info .tip .icon span {
   display: inline-block;
   vertical-align: middle;
   padding-left: 14px;
   margin-left: 3px;
 }
-
 .com ul li .info .tip .icon .zan {
   background: url(../image/zan.png) no-repeat left 4px;
 }
-
 .com ul li .info .tip .icon .look {
   background: url(../image/reply.png) no-repeat left center;
 }
-
 .com ul li .info .fix {
   padding: 13px 0;
 }
-
 .com ul li .bom {
   width: 220px;
   height: 15px;
 }
-
 .left {
   float: left;
 }
-
 .right {
   float: right;
 }
-
 @keyframes opc {
   0% {
     opacity: 0.5;
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     opacity: 0.5;
   }
 }
-
 .guide ul li {
   position: relative;
 }
-
 .guide ul li .bom {
   width: 221px;
   height: 19px;
   position: absolute;
   bottom: -14px;
 }
-
 .play1 {
   overflow: hidden;
 }
-
 .play1 .play {
   height: 1024px;
 }
-
 .play1 .play li {
   width: 220px;
   height: 240px;
 }
-
 .play1 .play li .name span {
   display: block;
   font-size: 12px;
   color: #a3a3a3;
 }
-
 .play1 .play li .tip .price {
   font-size: 16px;
   color: #fe5341;
 }
-
 .play1 .playMore {
   float: left;
   margin-left: 408px;
   margin-bottom: 20px;
 }
-
 .play1 .playMore .more-btn {
   background: url(../image/more.png) no-repeat left center;
   color: #fe5341;
   padding-left: 20px;
 }
-
 #scrollToTop {
   display: none;
   position: fixed;
@@ -347,9 +289,5 @@
   color: white;
   text-align: center;
   line-height: 50px;
-  cursor: pointer;
-}
-
-.zan:hover {
   cursor: pointer;
 }
