@@ -74,6 +74,7 @@ btn.addEventListener( 'click', function ()
 // 轮播图
 
 var mySwiper = new Swiper( '.swiper', {
+    direction: "horizontal",
     loop: true,
     // loopAdditionalSlides: 3,
     // autoplay: true,//等同于以下设置
@@ -83,12 +84,22 @@ var mySwiper = new Swiper( '.swiper', {
         disableOnInteraction: true,
     },
 
+
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-        hideOnClick: true,
+        // hideOnClick: true,
     },
+    effect: "slide",
 } )
+mySwiper.el.onmouseover = function ()
+{
+    mySwiper.autoplay.stop();
+}
+mySwiper.el.onmouseleave = function ()
+{
+    mySwiper.autoplay.start();
+}
 
 
 
