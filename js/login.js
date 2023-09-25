@@ -17,16 +17,13 @@ submit.onclick = function () {
         return true;
     }
 
-    // // 密码验证
+    //  密码验证
     if (input[2].value == "") {
         alert('密码不能为空')
         return true;
     }
 
-
-
     if (submit) {
-        // console.log(submit);
         console.log(getCookie('phone'));
 
         if (input[0].value != getCookie('phone')) {
@@ -41,8 +38,10 @@ submit.onclick = function () {
 
         } else if (input[0].value == getCookie('phone') && input[1].value == getCookie('user') && input[2].value == getCookie('user')) {
             alert('密码正确')
-            var form_ = document.querySelector('form')
-            form_.setAttribute("action", './index.html');
+            // var form_ = document.querySelector('form')
+            // form_.setAttribute("action", './index.html');
+            location.href = ("./index.html")
+
         }
 
     } else {

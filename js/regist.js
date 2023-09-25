@@ -11,13 +11,11 @@ gain_.onclick = function () {
         i--;
         gain_.innerHTML = i + '秒后重新发送';
         if (i == 0) {
-            // clearInterval(timer);
             gain_.innerHTML = '重新获取验证码';
             gain_.disabled = false
         } else {
             gain_.disabled = true
         }
-
 
     }, 1000)
     num = parseInt(Math.random() * 10000)
@@ -82,8 +80,9 @@ submit.onclick = function () {
 
 
     alert('注册成功！')
-    var form_ = document.querySelector('form')
-    form_.setAttribute("action", './login.html');
+    // var form_ = document.querySelector('form')
+    // form_.setAttribute("action", './login.html');
+    location.href = ("./login.html")
 }
 
 
