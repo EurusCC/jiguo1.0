@@ -76,7 +76,7 @@ submit.onclick = function () {
         return true;
     }
 
-    // 点 向cookie存值
+    //  向cookie存值
     if (submit) {
         setCookie('phone', input[0].value)
         setCookie('user', input[3].value)
