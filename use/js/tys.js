@@ -1,7 +1,7 @@
 // 渲染数据
 var json_;
 var ajax_ = new XMLHttpRequest || new ActiveXObject("Microsoft.XMLHTTP");
-ajax_.open('get', 'http://127.0.0.1:3000/useing/public', true);
+ajax_.open('get', 'http://127.0.0.1:3000/useing/master', true);
 ajax_.send();
 ajax_.onreadystatechange = function () {
     if (ajax_.readyState == 4) {
@@ -21,8 +21,8 @@ function show(val) {
 
     for (var i of val) {
         var arr = ['报告数量：8', '查看试用名单', '剩余时间2天']
-        // var arr1 = ['span_gray', 'span_green', 'span_red']
-        // var arr2 = ['li_p3_gray', 'li_p3_green', 'li_p3_red']
+        var arr1 = ['span_gray', 'span_green', 'span_red']
+        var arr2 = ['li_p3_gray', 'li_p3_green', 'li_p3_red']
         var k = parseInt(Math.random() * 3)
 
         str += `<li>
@@ -32,14 +32,14 @@ function show(val) {
             <div>
                 <h2>${i.text}</h2>
                 <p class="li_p1">
-                    <span class='span_green'>${i.totalnum}</span>
-                    <span class='span_green'>${i.num}台</span>
+                    <span class=${arr1[k]}>${i.totalnum}</span>
+                    <span class=${arr1[k]}>${i.num}台</span>
                 </p>
                 <p class="li_p2">
                     <span>${i.apply}</span>
                     <span>申请</span>
                 </p>
-                <p class='li_p3_green'}>${arr[k]}</p>
+                <p class=${arr2[k]}>${arr[k]}</p>
             </div>
         </a>
     </li>`
@@ -53,7 +53,14 @@ function show(val) {
 var more = document.querySelector('.more')
 var p = document.querySelector('.p1')
 more.onclick = function () {
-    ul.style.height = '1033px'
-    p.className = 'p2'
-    p.innerHTML = '没有更多啦~'
+
+    // p.style.background = 'url(../../image/loading-icon.gif)no-repeat 280px center'
+    p.className = 'p1_2'
+    p.innerHTML = '正在加载中'
+    setTimeout(function () {
+        p.className = 'p2'
+        p.innerHTML = '没有更多啦~'
+        ul.style.height = '1730px'
+    }, 500)
+
 }

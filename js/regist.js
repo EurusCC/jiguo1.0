@@ -1,10 +1,13 @@
 //获取元素
-var gain = document.querySelector('#gain')
+var gain_ = document.querySelector('#gain')
+var submit = document.querySelector('#submit')
+
 var timer;
 
 var num = 0
-function gain_() {
 
+gain_.onclick = function () {
+    // function gain_() {
     var i = 60;
 
     clearInterval(timer);
@@ -27,9 +30,9 @@ function gain_() {
     }, 6000)
 }
 
-var input = document.querySelectorAll('input')
+submit.onclick = function () {
+    var input = document.querySelectorAll('input')
 
-function register() {
     // 手机号验证
     var reg = /^[1-9]\d{10}$/;
     if (input[0].value == ' ') {
@@ -73,27 +76,17 @@ function register() {
         return true;
     }
 
-
-
-
-
-
-
-
-    // 点记住密码 向cookie存值
-    var submit = document.querySelector('#submit')
-    // console.log(submit);
+    //  向cookie存值
     if (submit) {
         setCookie('phone', input[0].value)
         setCookie('user', input[3].value)
         setCookie('pwd', input[4].value)
-        // setCookie('isrember', isrember_)
     }
 
 
-
-    alert['注册成功，请点击登录按钮登录！']
-
+    alert('注册成功！')
+    var form_ = document.querySelector('form')
+    form_.setAttribute("action", '../login.html');
 }
 
 

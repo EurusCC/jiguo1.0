@@ -71,7 +71,7 @@ a {
     margin: 0 auto;
 }
 
-.com .title {
+/* .com .title {
     position: relative;
     padding: 18px 0 16px;
     font-size: 20px;
@@ -89,7 +89,7 @@ a {
     font-size: 14px;
     color: #fd6959;
     background: url(../image/readMore.png) no-repeat right 7px;
-}
+} */
 
 .com ul {
     height: 1100px;
@@ -110,6 +110,12 @@ a {
     border-radius: 6px;
     background-color: #fff;
 
+}
+
+.list1::after {
+    content: '';
+    width: 220px;
+    height: 200px;
 }
 
 .com ul li:nth-of-type(4) {
