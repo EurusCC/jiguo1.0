@@ -88,6 +88,7 @@ function register() {
     // console.log(submit);
     if (submit) {
         setCookie('phone', input[0].value)
+        setCookie('user', input[3].value)
         setCookie('pwd', input[4].value)
         // setCookie('isrember', isrember_)
     }
