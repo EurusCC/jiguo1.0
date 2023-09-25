@@ -200,6 +200,7 @@ header {
     /* align-items: flex-end; */
     flex-wrap: wrap;
     align-items: stretch;
+    overflow: hidden;
 
 }
 
@@ -320,6 +321,7 @@ header {
 }
 
 /* 底部 */
+/*
 footer {
     background: #505050;
     color: #a3a3a3;
@@ -392,4 +394,4 @@ footer .wrap .copy {
     text-align: center;
     padding-top: 80px;
     font-size: 13px;
-}
+} */

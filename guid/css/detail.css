@@ -159,9 +159,7 @@ a {
     background: url(../../image/reply.png) no-repeat left center;
 }
 
-/* .right {
-    float: right;
-} */
+
 
 .com ul li a .info .fix {
     padding: 13px 0;
@@ -192,5 +190,5 @@ a {
 
 footer .wrap .fix li:nth-of-type(2),
 footer .wrap .fix li:nth-of-type(4) {
-    width: 160px !important;
+    width: 140px !important;
 }
