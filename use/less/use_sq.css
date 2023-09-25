@@ -183,6 +183,12 @@ input {
   color: #fe5341;
   cursor: pointer;
 }
+.content .more .p1_2 {
+  padding-left: 24px;
+  background: url(../../image/loading-icon.gif) no-repeat 690px center;
+  color: #fe5341;
+  cursor: pointer;
+}
 .content .more .p2 {
   color: #a3a3a3;
   text-align: center;

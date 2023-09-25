@@ -53,7 +53,14 @@ function show(val) {
 var more = document.querySelector('.more')
 var p = document.querySelector('.p1')
 more.onclick = function () {
-    ul.style.height = '1730px'
-    p.className = 'p2'
-    p.innerHTML = '没有更多啦~'
+
+    // p.style.background = 'url(../../image/loading-icon.gif)no-repeat 280px center'
+    p.className = 'p1_2'
+    p.innerHTML = '正在加载中'
+    setTimeout(function () {
+        p.className = 'p2'
+        p.innerHTML = '没有更多啦~'
+        ul.style.height = '1730px'
+    }, 500)
+
 }
