@@ -73,14 +73,31 @@ function register() {
         return true;
     }
 
+<<<<<<< HEAD
     // 点 向cookie存值
+=======
+
+
+
+
+
+
+
+    // 点记住密码 向cookie存值
+>>>>>>> dev
     var submit = document.querySelector('#submit')
 
     if (submit) {
         setCookie('phone', input[0].value)
+        setCookie('user', input[3].value)
         setCookie('pwd', input[4].value)
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> dev
     alert['注册成功，请点击登录按钮登录！']
     var form_ = document.querySelector('form')
     form_.setAttribute("action", '../login.html');

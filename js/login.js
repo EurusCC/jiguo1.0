@@ -1,6 +1,6 @@
 var input = document.querySelectorAll('input')
-
-function login() {
+var submit = document.querySelector('#submit')
+submit.onclick = function () {
     // 手机号验证
     var reg = /^[1-9]\d{10}$/;
     if (input[0].value == ' ') {
@@ -22,4 +22,31 @@ function login() {
         alert('密码不能为空')
         return true;
     }
+
+
+
+    if (submit) {
+        // console.log(submit);
+        console.log(getCookie('phone'));
+
+        if (input[0].value != getCookie('phone')) {
+            alert('该手机号未注册，请先注册！')
+
+        } else if (input[1].value != getCookie('user')) {
+            alert('密码或用户名错误！')
+
+        } else if
+            (input[2].value != getCookie('user')) {
+            alert('密码或用户名错误！')
+
+        } else if (input[0].value == getCookie('phone') && input[1].value == getCookie('user') && input[2].value == getCookie('user')) {
+            alert('密码正确')
+            var form_ = document.querySelector('form')
+            form_.setAttribute("action", './index.html');
+        }
+
+    } else {
+        alert('未注册，请重新注册！')
+    }
+
 }
