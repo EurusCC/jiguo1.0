@@ -30,8 +30,111 @@ a {
     padding: 25px 0 35px 0;
 }
 
+/* 头部 */
 
+.continer {
+    width: 1000px;
+    margin: 0 auto;
+}
 
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    padding-left: 10px;
+}
+
+header {
+    height: 76px;
+    overflow: hidden;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+}
+
+.logo {
+    width: 132px;
+    float: left;
+    margin-top: 10px;
+}
+
+.logo:hover {
+    animation: opc 2s infinite;
+}
+
+@keyframes opc {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav {
+    float: left;
+    width: 490px;
+    height: 60px;
+    padding: 28px 0 0 40px;
+    overflow: hidden;
+}
+
+.nav>li {
+    float: left;
+    padding: 0 25px;
+
+}
+
+.nav>li>a {
+    font-size: 20px;
+}
+
+.nav>li>a:hover {
+    color: #fe5341;
+}
+
+.regist,
+.search {
+    float: right;
+}
+
+.regist {
+    transition: all 0.15s linear;
+    margin-top: 23px;
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    border: 1px #fe5341 solid;
+    color: #fe5341;
+}
+
+.regist:hover {
+    background-color: #fe5341;
+    color: white;
+}
+
+.search {
+    transition: transform 0.3s ease;
+    width: 42px;
+    height: 40px;
+    line-height: 999;
+    overflow: hidden;
+    margin-top: 28px;
+    margin-right: 15px;
+    background: url(../../image/search.png) no-repeat;
+}
+
+.search:hover {
+    transform: scale(1.2);
+}
+
+/* 导购清单 */
 .content {
     width: 1000px;
     height: auto;
@@ -55,7 +158,6 @@ a {
     font-size: 18px;
     padding-bottom: 8px;
     color: #a3a3a3;
-
 }
 
 .content>.new>a:nth-of-type(1) {
@@ -64,23 +166,22 @@ a {
 }
 
 
-
 .continer {
     width: 1000px;
     height: auto;
     margin: 0 auto;
 }
 
-.com .title {
+/* .com .title {
     position: relative;
     padding: 18px 0 16px;
     font-size: 20px;
     font-weight: bold;
     color: #474747;
     line-height: 1.6;
-}
+} */
 
-.com a.more {
+/* .com a.more {
     font-weight: normal;
     position: absolute;
     right: 0;
@@ -89,27 +190,40 @@ a {
     font-size: 14px;
     color: #fd6959;
     background: url(../image/readMore.png) no-repeat right 7px;
-}
+} */
 
 .com ul {
     height: 1100px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+.list1::after {
+    content: '';
+    width: 220px;
+    height: 200;
 }
 
 .com ul li {
     width: 220px;
     height: 231px;
     line-height: 21px;
-    /* margin: 0 37px 20px 0; */
-    float: left;
+    /* float: left; */
     border: 1px solid #e6e9e9;
     border-radius: 6px;
     background-color: #fff;
 
+}
+
+.com ul li::after {
+    content: '';
+    width: 220px;
+    height: 200px;
 }
 
 .com ul li:nth-of-type(4) {
@@ -176,9 +290,7 @@ a {
     background: url(../../image/reply.png) no-repeat left center;
 }
 
-/* .right {
-    float: right;
-} */
+
 
 .com ul li a .info .fix {
     padding: 13px 0;
@@ -205,4 +317,79 @@ a {
     padding-left: 25px;
     background: url(../../image/more.png) no-repeat left center;
     color: red;
+}
+
+/* 底部 */
+footer {
+    background: #505050;
+    color: #a3a3a3;
+    padding: 40px 0px 15px;
+}
+
+footer .wrap {
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+footer .wrap .fix {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+footer .wrap .fix li {
+    float: left;
+    padding-left: 22px;
+}
+
+footer .wrap .fix li a {
+    color: #a3a3a3;
+    font-size: 13px;
+    float: left;
+    line-height: 20px;
+}
+
+footer .wrap .fix li:nth-of-type(2),
+footer .wrap .fix li:nth-of-type(4) {
+    width: 140px;
+}
+
+footer .wrap .fix li:nth-of-type(2)>p {
+    margin-top: 20px;
+}
+
+footer .wrap .fix li:nth-of-type(3) {
+    width: 100px;
+}
+
+footer .wrap .fix li:nth-of-type(5) {
+    width: 148px;
+}
+
+footer .wrap .fix li:nth-of-type(3)>p,
+footer .wrap .fix li:nth-of-type(4)>p,
+footer .wrap .fix li:nth-of-type(5)>p,
+footer .wrap .fix li:nth-of-type(6)>p {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer .wrap .fix li:nth-of-type(4)>a {
+    display: inline-block;
+    width: 69px;
+}
+
+footer .wrap .copy {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 13px;
 }
