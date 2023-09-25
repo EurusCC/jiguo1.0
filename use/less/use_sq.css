@@ -135,19 +135,19 @@ input {
   color: #ccc;
   padding: 10px 0;
 }
-.content ul li a div .li_p1 .span_green {
+.content ul li a div .li_p1 .span_red {
   padding: 2px 10px;
   margin: 0 5px;
   border-radius: 5px;
-  border: 1px solid #80c269;
+  border: 1px solid #fe5341;
   font-size: 12px;
-  color: #80c269;
+  color: #fe5341;
 }
 .content ul li a div .li_p2 span:nth-of-type(1) {
   color: #fe5341;
 }
-.content ul li a div .li_p3_green {
-  color: #80c269;
+.content ul li a div .li_p3_red {
+  color: #fe5341;
 }
 .content ul li a:hover img {
   animation: dong 0.7s infinite alternate linear;
@@ -186,4 +186,68 @@ input {
 .content .more .p2 {
   color: #a3a3a3;
   text-align: center;
+}
+footer {
+  background: #505050;
+  color: #a3a3a3;
+  padding: 40px 0px 15px;
+}
+footer .wrap {
+  width: 1000px;
+  min-width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+}
+footer .wrap .fix {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 13px;
+  overflow: hidden;
+}
+footer .wrap .fix li {
+  float: left;
+  padding-left: 22px;
+}
+footer .wrap .fix li a {
+  color: #a3a3a3;
+  font-size: 13px;
+  float: left;
+  line-height: 20px;
+}
+footer .wrap .fix li:nth-of-type(2) {
+  width: 140px;
+}
+footer .wrap .fix li:nth-of-type(4) {
+  width: 170px;
+}
+footer .wrap .fix li:nth-of-type(2) > p {
+  margin-top: 20px;
+}
+footer .wrap .fix li:nth-of-type(3) {
+  width: 100px;
+}
+footer .wrap .fix li:nth-of-type(5) {
+  width: 148px;
+}
+footer .wrap .fix li:nth-of-type(3) > p,
+footer .wrap .fix li:nth-of-type(4) > p,
+footer .wrap .fix li:nth-of-type(5) > p,
+footer .wrap .fix li:nth-of-type(6) > p {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 20px;
+}
+footer .wrap .fix li:nth-of-type(4) > a {
+  display: inline-block;
+  width: 69px;
+}
+footer .wrap .copy {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 13px;
 }

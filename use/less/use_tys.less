@@ -59,7 +59,7 @@ input {
             padding: 30px 0;
         }
 
-        a:nth-of-type(1) {
+        a:nth-of-type(2) {
             color: #fe5431;
             border-bottom: 4px #fe5431 solid;
             padding-bottom: 8px;
@@ -95,8 +95,6 @@ input {
         }
     }
 }
-
-
 
 
 /* 第三部分 */
@@ -161,13 +159,13 @@ input {
                         color: #ccc;
                         padding: 10px 0;
 
-                        // .span_gray {
-                        //     padding: 2px 10px;
-                        //     margin: 0 5px;
-                        //     border-radius: 5px;
-                        //     border: 1px solid #ccc;
-                        //     font-size: 12px;
-                        // }
+                        .span_gray {
+                            padding: 2px 10px;
+                            margin: 0 5px;
+                            border-radius: 5px;
+                            border: 1px solid #ccc;
+                            font-size: 12px;
+                        }
 
                         .span_green {
                             padding: 2px 10px;
@@ -178,14 +176,14 @@ input {
                             color: #80c269;
                         }
 
-                        // .span_red {
-                        //     padding: 2px 10px;
-                        //     margin: 0 5px;
-                        //     border-radius: 5px;
-                        //     border: 1px solid #fe5341;
-                        //     font-size: 12px;
-                        //     color: #fe5341;
-                        // }
+                        .span_red {
+                            padding: 2px 10px;
+                            margin: 0 5px;
+                            border-radius: 5px;
+                            border: 1px solid #fe5341;
+                            font-size: 12px;
+                            color: #fe5341;
+                        }
                     }
 
                     .li_p2 {
@@ -194,17 +192,17 @@ input {
                         }
                     }
 
-                    // .li_p3_gray {
-                    //     color: #ccc;
-                    // }
+                    .li_p3_gray {
+                        color: #ccc;
+                    }
 
                     .li_p3_green {
                         color: #80c269;
                     }
 
-                    // .li_p3_red {
-                    //     color: #fe5341;
-                    // }
+                    .li_p3_red {
+                        color: #fe5341;
+                    }
                 }
             }
 
@@ -227,10 +225,9 @@ input {
             margin-right: 0px;
         }
 
-        li:nth-of-type(2),
+        li:nth-of-type(3),
         li:nth-of-type(5),
-        li:nth-of-type(9),
-        li:nth-of-type(11) {
+        li:nth-of-type(15) {
             a {
                 >span {
                     background: #fbf4cb;
@@ -259,6 +256,83 @@ input {
         .p2 {
             color: #a3a3a3;
             text-align: center;
+        }
+    }
+}
+
+footer {
+    background: #505050;
+    color: #a3a3a3;
+    padding: 40px 0px 15px;
+
+    .wrap {
+        width: 1000px;
+        min-width: 1000px;
+        text-align: left;
+        margin: 0 auto;
+
+        .fix {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+            font-size: 13px;
+            overflow: hidden;
+
+            li {
+                float: left;
+                padding-left: 22px;
+
+                a {
+                    color: #a3a3a3;
+                    font-size: 13px;
+                    float: left;
+                    line-height: 20px;
+                }
+            }
+
+            li:nth-of-type(2) {
+                width: 140px;
+            }
+
+            li:nth-of-type(4) {
+                width: 170px;
+            }
+
+            li:nth-of-type(2)>p {
+                margin-top: 20px;
+            }
+
+            li:nth-of-type(3) {
+                width: 100px;
+            }
+
+            li:nth-of-type(5) {
+                width: 148px;
+            }
+
+            li:nth-of-type(3)>p,
+            li:nth-of-type(4)>p,
+            li:nth-of-type(5)>p,
+            li:nth-of-type(6)>p {
+                font-size: 16px;
+                color: white;
+                padding-bottom: 20px;
+            }
+
+            li:nth-of-type(4)>a {
+                display: inline-block;
+                width: 69px
+            }
+        }
+
+        .copy {
+            text-align: center;
+            padding-top: 80px;
+            font-size: 13px;
         }
     }
 }

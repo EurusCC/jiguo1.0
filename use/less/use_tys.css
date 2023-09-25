@@ -48,7 +48,7 @@ input {
   color: #a3a3a3;
   padding: 30px 0;
 }
-.title_box .small_nav a:nth-of-type(1) {
+.title_box .small_nav a:nth-of-type(2) {
   color: #fe5431;
   border-bottom: 4px #fe5431 solid;
   padding-bottom: 8px;
@@ -135,6 +135,21 @@ input {
   color: #ccc;
   padding: 10px 0;
 }
+.content ul li a div .li_p1 .span_gray {
+  padding: 2px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+.content ul li a div .li_p1 .span_green {
+  padding: 2px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #80c269;
+  font-size: 12px;
+  color: #80c269;
+}
 .content ul li a div .li_p1 .span_red {
   padding: 2px 10px;
   margin: 0 5px;
@@ -145,6 +160,12 @@ input {
 }
 .content ul li a div .li_p2 span:nth-of-type(1) {
   color: #fe5341;
+}
+.content ul li a div .li_p3_gray {
+  color: #ccc;
+}
+.content ul li a div .li_p3_green {
+  color: #80c269;
 }
 .content ul li a div .li_p3_red {
   color: #fe5341;
@@ -163,10 +184,9 @@ input {
 .content ul li:nth-of-type(4n) {
   margin-right: 0px;
 }
-.content ul li:nth-of-type(2) a > span,
+.content ul li:nth-of-type(3) a > span,
 .content ul li:nth-of-type(5) a > span,
-.content ul li:nth-of-type(9) a > span,
-.content ul li:nth-of-type(11) a > span {
+.content ul li:nth-of-type(15) a > span {
   background: #fbf4cb;
   color: #c4a96a;
 }
@@ -186,4 +206,68 @@ input {
 .content .more .p2 {
   color: #a3a3a3;
   text-align: center;
+}
+footer {
+  background: #505050;
+  color: #a3a3a3;
+  padding: 40px 0px 15px;
+}
+footer .wrap {
+  width: 1000px;
+  min-width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+}
+footer .wrap .fix {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 13px;
+  overflow: hidden;
+}
+footer .wrap .fix li {
+  float: left;
+  padding-left: 22px;
+}
+footer .wrap .fix li a {
+  color: #a3a3a3;
+  font-size: 13px;
+  float: left;
+  line-height: 20px;
+}
+footer .wrap .fix li:nth-of-type(2) {
+  width: 140px;
+}
+footer .wrap .fix li:nth-of-type(4) {
+  width: 170px;
+}
+footer .wrap .fix li:nth-of-type(2) > p {
+  margin-top: 20px;
+}
+footer .wrap .fix li:nth-of-type(3) {
+  width: 100px;
+}
+footer .wrap .fix li:nth-of-type(5) {
+  width: 148px;
+}
+footer .wrap .fix li:nth-of-type(3) > p,
+footer .wrap .fix li:nth-of-type(4) > p,
+footer .wrap .fix li:nth-of-type(5) > p,
+footer .wrap .fix li:nth-of-type(6) > p {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 20px;
+}
+footer .wrap .fix li:nth-of-type(4) > a {
+  display: inline-block;
+  width: 69px;
+}
+footer .wrap .copy {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 13px;
 }
