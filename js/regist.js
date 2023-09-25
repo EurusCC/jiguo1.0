@@ -5,7 +5,7 @@ var timer;
 var num = 0
 function gain_() {
 
-    var i = 61;
+    var i = 60;
 
     clearInterval(timer);
     timer = setInterval(function () {
@@ -21,8 +21,10 @@ function gain_() {
 
     }, 1000)
     num = parseInt(Math.random() * 10000)
-    alert(num)
-    console.log(num);
+    setTimeout(function () {
+        alert(num)
+        console.log(num);
+    }, 6000)
 }
 
 var input = document.querySelectorAll('input')
@@ -73,28 +75,24 @@ function register() {
 
 
 
-    // if (getCookie('isrember')) {
-    //     document.getElementById('username').value = getCookie('user')
-    //     document.getElementById('pwd').value = getCookie('pwd')
-    //     document.getElementById('isrember').checked = getCookie('isrember')
-    // }
 
 
-    // 获取
-    // var user_ = document.getElementById('username').value
-    // var pwd_ = document.getElementById('pwd').value
-    // var isrember_ = document.getElementById('isrember').checked
+
+
 
     // 点记住密码 向cookie存值
+    var submit = document.querySelector('#submit')
+    // console.log(submit);
+    if (submit) {
+        setCookie('phone', input[0].value)
+        setCookie('user', input[3].value)
+        setCookie('pwd', input[4].value)
+        // setCookie('isrember', isrember_)
+    }
 
-    // if (register) {
-    //     setCookie('phone', input[0].value)
-    //     setCookie('pwd', input[4].value)
-    //     // setCookie('isrember', isrember_)
-    // }
 
 
-
+    alert['注册成功，请点击登录按钮登录！']
 
 }
 
