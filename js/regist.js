@@ -89,15 +89,19 @@ function register() {
     // var isrember_ = document.getElementById('isrember').checked
 
     // 点记住密码 向cookie存值
+    var submit = document.querySelector('#submit')
+    // console.log(submit);
+    if (submit) {
+        setCookie('phone', input[0].value)
+        setCookie('pwd', input[4].value)
+        // setCookie('isrember', isrember_)
+    }
 
-    // if (register) {
-    //     setCookie('phone', input[0].value)
-    //     setCookie('pwd', input[4].value)
-    //     // setCookie('isrember', isrember_)
-    // }
+    // var user_ = document.getElementById('username').value
+    // var pwd_ = document.getElementById('pwd').value
 
 
-
+    alert['注册成功，请点击登录按钮登录！']
 
 }
 
