@@ -27,7 +27,6 @@ function gain_() {
     }, 6000)
 }
 
-
 var input = document.querySelectorAll('input')
 
 function register() {
@@ -76,11 +75,7 @@ function register() {
 
 
 
-    // if (getCookie('isrember')) {
-    //     document.getElementById('username').value = getCookie('user')
-    //     document.getElementById('pwd').value = getCookie('pwd')
-    //     document.getElementById('isrember').checked = getCookie('isrember')
-    // }
+
 
 
     // 获取
