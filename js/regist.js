@@ -73,31 +73,17 @@ function register() {
         return true;
     }
 
-
-
-
-
-
-    // 获取
-    // var user_ = document.getElementById('username').value
-    // var pwd_ = document.getElementById('pwd').value
-    // var isrember_ = document.getElementById('isrember').checked
-
-    // 点记住密码 向cookie存值
+    // 点 向cookie存值
     var submit = document.querySelector('#submit')
-    // console.log(submit);
+
     if (submit) {
         setCookie('phone', input[0].value)
         setCookie('pwd', input[4].value)
-        // setCookie('isrember', isrember_)
     }
 
-    // var user_ = document.getElementById('username').value
-    // var pwd_ = document.getElementById('pwd').value
-
-
     alert['注册成功，请点击登录按钮登录！']
-
+    var form_ = document.querySelector('form')
+    form_.setAttribute("action", '../login.html');
 }
 
 
