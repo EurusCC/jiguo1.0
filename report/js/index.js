@@ -68,6 +68,8 @@ more.onclick = function () {
         p.className = 'p2'
         p.innerHTML = '没有更多啦~'
         ul.style.height = '6480px'
+        ul.style.transition = 'all 1s'
+
     }, 500)
 
 }
