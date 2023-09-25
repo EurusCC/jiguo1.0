@@ -78,10 +78,7 @@ function register() {
 
 
 
-    // 获取
-    // var user_ = document.getElementById('username').value
-    // var pwd_ = document.getElementById('pwd').value
-    // var isrember_ = document.getElementById('isrember').checked
+
 
     // 点记住密码 向cookie存值
     var submit = document.querySelector('#submit')
@@ -93,8 +90,6 @@ function register() {
         // setCookie('isrember', isrember_)
     }
 
-    // var user_ = document.getElementById('username').value
-    // var pwd_ = document.getElementById('pwd').value
 
 
     alert['注册成功，请点击登录按钮登录！']
