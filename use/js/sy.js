@@ -32,14 +32,14 @@ function show(val) {
             <div>
                 <h2>${i.text}</h2>
                 <p class="li_p1">
-                    <span class='span_gray'>${i.totalnum}</span>
-                    <span class='span_gray'>${i.num}台</span>
+                    <span class='span_green'>${i.totalnum}</span>
+                    <span class='span_green'>${i.num}台</span>
                 </p>
                 <p class="li_p2">
                     <span>${i.apply}</span>
                     <span>申请</span>
                 </p>
-                <p class='li_p3_gray'}>${arr[k]}</p>
+                <p class='li_p3_green'}>${arr[k]}</p>
             </div>
         </a>
     </li>`
@@ -53,7 +53,14 @@ function show(val) {
 var more = document.querySelector('.more')
 var p = document.querySelector('.p1')
 more.onclick = function () {
-    ul.style.height = '1033px'
-    p.className = 'p2'
-    p.innerHTML = '没有更多啦~'
+
+    // p.style.background = 'url(../../image/loading-icon.gif)no-repeat 280px center'
+    p.className = 'p1_2'
+    p.innerHTML = '正在加载中'
+    setTimeout(function () {
+        p.className = 'p2'
+        p.innerHTML = '没有更多啦~'
+        ul.style.height = '1033px'
+    }, 500)
+
 }

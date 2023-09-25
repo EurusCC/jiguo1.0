@@ -1,7 +1,7 @@
 // 渲染数据
 var json_;
 var ajax_ = new XMLHttpRequest || new ActiveXObject("Microsoft.XMLHTTP");
-ajax_.open('get', 'http://127.0.0.1:3000/useing/master', true);
+ajax_.open('get', 'http://127.0.0.1:3000/useing/public', true);
 ajax_.send();
 ajax_.onreadystatechange = function () {
     if (ajax_.readyState == 4) {
@@ -53,7 +53,14 @@ function show(val) {
 var more = document.querySelector('.more')
 var p = document.querySelector('.p1')
 more.onclick = function () {
-    ul.style.height = '1730px'
-    p.className = 'p2'
-    p.innerHTML = '没有更多啦~'
+
+    // p.style.background = 'url(../../image/loading-icon.gif)no-repeat 280px center'
+    p.className = 'p1_2'
+    p.innerHTML = '正在加载中'
+    setTimeout(function () {
+        p.className = 'p2'
+        p.innerHTML = '没有更多啦~'
+        ul.style.height = '1033px'
+    }, 500)
+
 }
