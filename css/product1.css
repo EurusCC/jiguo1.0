@@ -1,0 +1,96 @@
+.swiper-slide {
+  width: 1000px;
+  margin: 30px auto;
+  overflow: hidden;
+
+}
+
+.swiper-slide ul li {
+  width: 220px;
+  height: 289px;
+  float: left;
+  border: 1px solid #e6e9e9;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.swiper-slide ul li img {
+  height: 130px;
+  width: 220px;
+}
+
+.swiper-slide ul li .top-tip {
+  color: #f5e8e8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 22px;
+  border-radius: 0 0 0 6px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.swiper-slide ul li .shoufa {
+  background-color: #fe5341;
+}
+
+.swiper-slide ul li .tys {
+  background-color: #fbf4cb;
+  color: #c4a96a;
+}
+
+.swiper-slide ul li .hot-con {
+  padding: 15px;
+}
+
+.swiper-slide ul li .hot-con .name {
+  font-size: 16px;
+  height: 48px;
+  text-align: center;
+}
+
+.swiper-slide ul li .hot-con .red {
+  color: #fe5341;
+}
+
+.swiper-slide ul li .hot-con .red span {
+  border: 1px solid #fe5341;
+}
+
+.swiper-slide ul li .hot-con .green {
+  color: #80c269;
+}
+
+.swiper-slide ul li .hot-con .green span {
+  border: 1px solid #80c269;
+}
+
+.swiper-slide ul li .hot-con .tabs {
+  padding: 6px 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.swiper-slide ul li .hot-con .tabs span {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.swiper-slide ul li .hot-con .sq {
+  font: 16px;
+  line-height: 25px;
+}
+
+.swiper-slide ul li .hot-con .sq span {
+  color: #fe5341;
+}
+
+.swiper-slide ul li .hot-con .current {
+  font-size: 14px;
+  line-height: 25px;
+}

@@ -1,0 +1,27 @@
+/* 清除默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去除ul/li默认小黑点 */
+ul li {
+    list-style: none;
+}
+
+/* 去除a链接下划线、默认颜色 */
+a {
+    text-decoration: none;
+    color: rgb(76, 74, 74);
+}
+
+.continer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 清除input框默认样式 */
+input {
+    outline: none;
+    padding-left: 10px;
+}
