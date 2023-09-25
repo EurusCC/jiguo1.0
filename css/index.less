@@ -250,61 +250,70 @@
             border-radius: 6px;
             background-color: #fff;
 
-            a {
-                img {
-                    width: 220px;
-                    height: 130px;
 
-                    border-radius: 6px 6px 0 0;
+            img {
+                width: 220px;
+                height: 130px;
 
-                    &:hover {
-                        animation: opc 2s infinite;
+                border-radius: 6px 6px 0 0;
+
+                &:hover {
+                    animation: opc 2s infinite;
+                }
+            }
+
+            .info {
+                padding: 7px 10px 10px;
+
+                .name {
+                    font-size: 14px;
+                    height: 45px;
+                    overflow: hidden;
+                    word-break: break-all;
+                }
+
+                .tip {
+                    color: #a3a3a3;
+                    font-size: 12px;
+
+                    .icon {
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding-left: 14px;
+                            margin-left: 3px
+                        }
+
+                        .zan {
+                            background: url(../image/zan.png) no-repeat left 4px;
+
+                            // background-size: 15px 15px;
+                        }
+
+                        .look {
+                            background: url(../image/reply.png) no-repeat left center;
+                        }
                     }
                 }
 
-                .info {
-                    padding: 7px 10px 10px;
-
-                    .name {
-                        font-size: 14px;
-                        height: 45px;
-                        overflow: hidden;
-                        word-break: break-all;
-                    }
-
-                    .tip {
-                        color: #a3a3a3;
-                        font-size: 12px;
-
-                        .icon {
-                            span {
-                                display: inline-block;
-                                vertical-align: middle;
-                                padding-left: 14px;
-                                margin-left: 3px
-                            }
-
-                            .zan {
-                                background: url(../image/zan.png) no-repeat left 4px;
-                            }
-
-                            .look {
-                                background: url(../image/reply.png) no-repeat left center;
-                            }
-                        }
-                    }
-
-                    .fix {
-                        padding: 13px 0;
-                    }
-
+                .fix {
+                    padding: 13px 0;
                 }
 
             }
 
+            .bom {
+                width: 220px;
+                height: 15px;
+            }
+
+
+
         }
     }
 }
+
+
 
 .left {
     float: left;

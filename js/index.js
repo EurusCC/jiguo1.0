@@ -131,6 +131,7 @@ function show ( data2 )
         <li>
                         <a href="./guid/detail.html">
                             <img src="${ b.img }" alt="">
+                        </a>
                             <div class="info">
                                 <p class="name">${ b.text }
                                 <span>${ b.description }</span>
@@ -145,7 +146,7 @@ function show ( data2 )
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        
                     </li>
         `
             // console.log( str2 );
@@ -226,3 +227,46 @@ scrollToTopBtn.addEventListener( "click", function ()
         behavior: "smooth"
     } );
 } );
+
+
+
+
+setTimeout( function ()
+{
+    // 点赞
+    var zan = document.querySelectorAll( '.zan' )
+    console.log( zan );
+
+    // var num3 = zan[ 0 ].textContent
+    for ( let i = 0; i < zan.length; i++ )
+    {
+
+
+        var clickCount = 0; // 用于追踪点击次数
+
+        zan[ i ].onclick = function ()
+        {
+            console.log( zan[ i ] );
+            var num3 = parseInt( zan[ i ].textContent );
+
+            if ( clickCount % 2 === 0 )
+            { // 判断点击次数是否为偶数
+                num3 += 1;
+                zan[ i ].style.backgroundImage = 'url(./image/zan1.png)';
+                zan[ i ].style.backgroundSize = '16px';
+            } else
+            {
+                num3 -= 1;
+                zan[ i ].style.background = "url(./image/zan.png) no-repeat left 4px";
+                // zan[ i ].style.backgroundSize = '15px';
+            }
+
+            clickCount++; // 点击次数加1
+
+
+            zan[ i ].innerHTML = num3;
+        }
+
+
+    }
+}, 3000 )
