@@ -25,7 +25,7 @@ a {
 }
 
 .box {
-    background-color: white;
+    background-color: #F7F7F7;
     /* margin-top: 30px; */
     padding: 25px 0 35px 0;
 }
@@ -63,40 +63,17 @@ a {
     border-bottom: 4px red solid;
 }
 
-
-
 .continer {
     width: 1000px;
     height: auto;
     margin: 0 auto;
 }
 
-/* .com .title {
-    position: relative;
-    padding: 18px 0 16px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #474747;
-    line-height: 1.6;
-}
-
-.com a.more {
-    font-weight: normal;
-    position: absolute;
-    right: 0;
-    top: 22px;
-    padding-right: 17px;
-    font-size: 14px;
-    color: #fd6959;
-    background: url(../image/readMore.png) no-repeat right 7px;
-} */
-
 .com ul {
     height: 1100px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
 }
 
@@ -211,4 +188,9 @@ a {
     padding-left: 25px;
     background: url(../../image/more.png) no-repeat left center;
     color: red;
+}
+
+footer .wrap .fix li:nth-of-type(2),
+footer .wrap .fix li:nth-of-type(4) {
+    width: 160px !important;
 }
